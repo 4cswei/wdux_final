@@ -1,0 +1,110 @@
+/*---------- css for contact page ----------*/
+.sub-header {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.75), rgba(4, 9, 30, 0.75)),
+    url(../images/contact_page.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  /* color: white; */
+}
+
+.sub-header h1 {
+  color: white;
+  font-size: 3rem;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+  height: 300px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+
+.location {
+  width: 80%;
+  margin: auto;
+  padding-top: 5rem;
+}
+
+.contact-us {
+  width: 80%;
+  margin: auto;
+  /* padding-top: 5rem; */
+}
+
+.contact-col {
+  flex-basis: 45%;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.material-icons {
+  margin: 0px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.info {
+  margin: 0px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.info h3 {
+  padding: 0 1rem;
+}
+
+.info p {
+  font-size: 1rem;
+}
+
+.address,
+.phone,
+.email,
+.hour {
+  padding: 1rem;
+}
+
+.contact-col input,
+.contact-col textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  outline: none;
+  border: 2px solid #13161930;
+  /* box-sizing: border-box; */
+}
+
+.bk-btn {
+  color: #131619;
+  border: 3px solid #131619;
+  background-color: #13161910;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.contact-submit p {
+  font-size: 1rem;
+  color: #9370db;
+}
+
+.contact-submit {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media (max-width: 700px) {
+  .sub-header h1 {
+    font-size: 2rem;
+  }
+}

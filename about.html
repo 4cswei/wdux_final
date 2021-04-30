@@ -1,0 +1,96 @@
+<!-- https://www.youtube.com/watch?v=oYRda7UtuhA -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles_g.css" />
+    <link rel="stylesheet" href="./styles/styles_about.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    />
+
+    <title>Fitness</title>
+  </head>
+  <body>
+    <!------ header for about page ------>
+    <section class="sub-header">
+      <nav class="navbar">
+        <a href="./index.html"><img src="./images/logo.png" alt="logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <!-- close menu in samll screen -->
+          <span class="material-icons close" onclick="hideMenu()"> close </span>
+          <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./course.html">COURSE</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <!-- show menu burger in samll screen -->
+        <span class="material-icons menu" onclick="showMenu()">menu</span>
+      </nav>
+      <h1>About Us</h1>
+    </section>
+    <main>
+      <!------ content ------>
+      <section class="about-us">
+        <div class="row">
+          <div class="about-col">
+            <h2>Certified Personal Trainers</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              aspernatur, veniam vitae vel eum delectus vero perspiciatis in
+              laboriosam odio, illum nihil molestias quidem quasi, ratione ipsa
+              consequuntur rem porro!
+            </p>
+            <a href="./contact.html" class="main-btn bk-btn">CONTACT US</a>
+          </div>
+          <div class="about-col">
+            <img src="./images/team.jpg" alt="team" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <!------ footer ------>
+    <footer class="site-footer">
+      <div class="row">
+        <div class="footer-col">
+          <img
+            src="./images/default-monochrome-black.svg"
+            alt="footer-logo"
+            height="87"
+            width="100"
+          />
+        </div>
+        <div class="footer-col footer-col-about">
+          <h4>ABOUT</h4>
+          <p>
+            This is a final project for the module "Web Development and User
+            Experience". The object is to utilise HTML, CSS, and JavaScript to
+            develop a personal trainer website.
+          </p>
+          <div class="social-media">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-instagram-square"></i>
+            <i class="fab fa-linkedin"></i>
+          </div>
+          <p>Made with <i class="fas fa-heart"></i> by Chen-Shuang Wei</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./scripts/script_g.js"></script>
+  </body>
+</html>

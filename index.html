@@ -1,0 +1,148 @@
+<!-- https://www.youtube.com/watch?v=oYRda7UtuhA -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles_g.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    />
+
+    <title>Fitness</title>
+  </head>
+  <body>
+    <!------ landing page (header) ------>
+    <header classs="banner">
+      <nav class="navbar">
+        <a href="./index.html"><img src="./images/logo.png" alt="logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <!-- close menu in samll screen -->
+          <span class="material-icons close" onclick="hideMenu()"> close </span>
+          <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./course.html">COURSE</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <!-- show menu burger in samll screen -->
+        <span class="material-icons menu" onclick="showMenu()">menu</span>
+      </nav>
+      <div class="intro">
+        <h1 id="intro">Certified Personal Trainer</h1>
+        <p id="intro">
+          Would you like to get fit and become stronger and healthier?
+        </p>
+        <a href="./contact.html" class="main-btn">Contact Us To Know More</a>
+      </div>
+    </header>
+    <main>
+      <!------ course ------>
+      <section class="course">
+        <h2>Courses We Offer</h2>
+        <p>Online or In-person</p>
+        <div class="row">
+          <div class="course-col">
+            <h3>Online</h3>
+            <p>Coming soon!</p>
+          </div>
+          <div class="course-col">
+            <h3>In-Person</h3>
+            <p>Coming soon!</p>
+          </div>
+        </div>
+      </section>
+      <!------ exercise ------>
+      <section class="exercise">
+        <h2>Exercise Categories</h2>
+        <p>What may suit you?</p>
+        <div class="row exercise-row">
+          <div class="exercise-col">
+            <img src="./images/weight_training.jpg" alt="weight-training" />
+            <!-- <div class="layer"> -->
+            <h3>Weight Training</h3>
+            <!-- </div> -->
+            <p>
+              Weight training exercises utilise resistance to induce muscular
+              contractions which aid in developing muscle size, strength and
+              endurance.
+            </p>
+            <!-- https://www.stgeorges.nhs.uk/wp-content/uploads/2020/11/THE_MUT_01.pdf -->
+          </div>
+          <div class="exercise-col">
+            <img src="./images/hiit.jpg" alt="hiit" />
+            <!-- <div class="layer"> -->
+            <h3>High-Intensity Interval Training (HIIT)</h3>
+            <!-- </div> -->
+            <p>
+              HIIT is a great way to burn calories effectively through quick
+              bursts of intense exercise, mixed with lower intensity periods of
+              rest. Regular bursts of intense exercise may even be more
+              effective for weight loss than less-intense workouts.
+            </p>
+            <!-- https://www.livewelldorset.co.uk/articles/nhs-introduction-to-hiit-workouts/ -->
+          </div>
+          <div class="exercise-col">
+            <img src="./images/yoga.jpg" alt="yoga" />
+            <!-- <div class="layer"> -->
+            <h3>Yoga</h3>
+            <!-- </div> -->
+            <p>
+              Yoga is an ancient form of exercise that focuses on strength,
+              flexibility and breathing to boost physical and mental wellbeing.
+              The main components of yoga are postures (a series of movements
+              designed to increase strength and flexibility) and breathing.
+            </p>
+            <!-- https://www.nhs.uk/live-well/exercise/guide-to-yoga/ -->
+          </div>
+        </div>
+      </section>
+      <!------ contact ------>
+      <section class="contact">
+        <h2>Join Us In London Or<br />Anywhere From The World</h2>
+        <a href="./contact.html" class="main-btn">Contact Us</a>
+      </section>
+    </main>
+    <!------ footer ------>
+    <footer class="site-footer">
+      <div class="row">
+        <div class="footer-col">
+          <img
+            src="./images/default-monochrome-black.svg"
+            alt="footer-logo"
+            height="87"
+            width="100"
+          />
+        </div>
+        <div class="footer-col footer-col-about">
+          <h4>ABOUT</h4>
+          <p>
+            This is a final project for the module "Web Development and User
+            Experience". The object is to utilise HTML, CSS, and JavaScript to
+            develop a personal trainer website.
+          </p>
+          <div class="social-media">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-instagram-square"></i>
+            <i class="fab fa-linkedin"></i>
+          </div>
+          <p>Made with <i class="fas fa-heart"></i> by Chen-Shuang Wei</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./scripts/script_g.js"></script>
+  </body>
+</html>

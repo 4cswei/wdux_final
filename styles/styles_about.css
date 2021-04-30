@@ -1,0 +1,59 @@
+/*---------- css for about page ----------*/
+.sub-header {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.75), rgba(4, 9, 30, 0.75)),
+    url(../images/about_page.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  /* color: white; */
+}
+
+.sub-header h1 {
+  color: white;
+  font-size: 3rem;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.about-us {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.about-col {
+  flex-basis: 45%;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.about-col img {
+  width: 100%;
+}
+
+.about-col p {
+  margin: 0.8rem;
+  padding: 0.8rem;
+}
+.bk-btn {
+  color: #131619;
+  border: 3px solid #131619;
+  background-color: #13161910;
+  border-radius: 5px;
+}
+
+@media (max-width: 700px) {
+  .sub-header h1 {
+    font-size: 2rem;
+  }
+  .about-col p {
+    font-size: 1rem;
+  }
+}

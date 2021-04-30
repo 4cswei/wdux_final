@@ -1,0 +1,305 @@
+/* applicable for all html elements  */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  color: #131619;
+}
+
+/*------ landing page ------*/
+/* add banner (background image) */
+header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.75), rgba(4, 9, 30, 0.75)),
+    url(../images/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 150px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none; /* remove bullet points */
+  display: inline-block; /* horizontal */
+  padding: 0.8rem;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none; /* remove underline */
+  font-size: 1.25rem;
+}
+
+/* nav bar hover effect: display underline */
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 4px;
+  background-color: #eded1b;
+  display: block;
+  margin: auto;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+  /* width: max-content; */
+}
+
+.intro {
+  /*put the intro text in the center of div */
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: 2.5rem;
+}
+#intro {
+  color: white;
+}
+
+.intro h1 {
+  font-size: 3.5rem;
+}
+
+.intro p {
+  margin: 1rem;
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+
+.main-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 3px solid white;
+  padding: 1rem;
+  font-size: 1.3rem;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.main-btn:hover {
+  border: 3px solid #eded1b;
+  background-color: #eded1b;
+  color: #131619;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav .material-icons {
+  /* no menu icons when in big screen */
+  display: none;
+}
+
+/*------ course ------*/
+.course {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #131619;
+}
+
+p {
+  font-size: 1.25rem;
+  color: #131619;
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+.row {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.exercise-row {
+  align-items: flex-start;
+}
+
+.course-col {
+  flex-basis: 45%;
+  background-color: #eded1b80;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem 0;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.course-col:hover {
+  box-shadow: 0 0 20px 0 #13161950;
+}
+
+h3 {
+  padding: 1rem;
+}
+
+/*------ exercise ------*/
+.exercise {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.exercise-col {
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin: 1rem 0;
+  text-align: left;
+  /* position: relative;
+  overflow: hidden; */
+}
+
+.exercise-col img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.exercise-col p {
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+.exercise-col h3 {
+  padding: 1rem 0;
+  font-size: 1.1rem;
+}
+
+/*------ contact ------*/
+.contact {
+  margin: 5rem auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.75), rgba(4, 9, 30, 0.75)),
+    url(../images/contact.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.contact h2 {
+  color: white;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+/*------ footer ------*/
+.site-footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+  background-color: #eded1b30;
+  opacity: 0.7;
+}
+.footer-col {
+  margin: 0 2rem;
+}
+
+.footer-col-about {
+  padding: 0 100px;
+}
+
+.site-footer p {
+  font-size: 0.8rem;
+}
+
+.social-media .fab {
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  padding: 0.5rem 0;
+}
+
+/* Screen Sizes 700px and less */
+@media (max-width: 700px) {
+  .intro h1 {
+    font-size: 2rem;
+  }
+  .intro p {
+    margin: 0.8rem;
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+  .main-btn {
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+  .nav-links {
+    position: fixed;
+    background-color: #eded1b;
+    height: 100vh;
+    width: 150px;
+    top: 0;
+    right: -150px; /* menu hidden */
+    z-index: 2;
+    color: #131619;
+    transition: 1s;
+  }
+  .nav-links ul li {
+    display: block;
+    padding: 0.5rem;
+  }
+  .nav-links ul li a {
+    color: #131619;
+    font-size: 1rem;
+  }
+  .nav-links ul li::after {
+    height: 3px;
+    background-color: #9370db;
+  }
+  nav .material-icons {
+    display: inline-block;
+    color: #131619;
+    margin: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  nav .material-icons.menu {
+    color: white;
+  }
+  nav .material-icons.close {
+    padding: 1rem;
+  }
+  .nav-links ul {
+    padding: 0 2rem;
+  }
+  .row {
+    flex-direction: column;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .footer-col-about {
+    padding: 0px;
+  }
+}

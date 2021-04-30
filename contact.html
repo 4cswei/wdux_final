@@ -1,0 +1,187 @@
+<!-- https://www.youtube.com/watch?v=oYRda7UtuhA -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles_g.css" />
+    <link rel="stylesheet" href="./styles/styles_contact.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    />
+
+    <title>Fitness</title>
+  </head>
+  <body>
+    <!------ header for about page ------>
+    <section class="sub-header">
+      <nav class="navbar">
+        <a href="./index.html"><img src="./images/logo.png" alt="logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <!-- close menu in samll screen -->
+          <span class="material-icons close" onclick="hideMenu()"> close </span>
+          <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./course.html">COURSE</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <!-- show menu burger in samll screen -->
+        <span class="material-icons menu" onclick="showMenu()">menu</span>
+      </nav>
+      <h1>Contact Us</h1>
+    </section>
+    <main>
+      <!------ content ------>
+      <!-- google map api -->
+      <section class="location">
+        <div id="map"></div>
+      </section>
+      <!-- how to contact -->
+      <section class="contact-us">
+        <div class="row">
+          <!-- contact info -->
+          <div class="contact-col">
+            <div class="address">
+              <span class="material-icons"> home </span>
+              <span class="info">
+                <h3>Address</h3>
+                <p>Malet St,<br />London WC1E 7HX</p>
+              </span>
+            </div>
+            <div class="phone">
+              <span class="material-icons"> phone </span>
+              <span class="info">
+                <h3>Phone</h3>
+                <p>(+44)1234567890</p>
+              </span>
+            </div>
+            <div class="email">
+              <span class="material-icons"> email </span>
+              <span class="info">
+                <h3>E-mail</h3>
+                <p>contact@fitu.co.uk</p>
+              </span>
+            </div>
+            <div class="hour">
+              <span class="material-icons"> schedule </span>
+              <span class="info">
+                <h3>Business Hours</h3>
+                <p>Monday-Saturday<br />10am-10pm</p>
+              </span>
+            </div>
+          </div>
+          <!-- contact form -->
+          <div class="contact-col contact-form">
+            <form id="contactForm">
+              <!-- name -->
+              <div class="contact-name">
+                <label for="contact-name">
+                  <input
+                    type="text"
+                    id="contact-name"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </label>
+              </div>
+              <!-- email -->
+              <div class="contact-email">
+                <label for="contact-email">
+                  <input
+                    type="email"
+                    id="contact-email"
+                    placeholder="Enter your email address"
+                    required
+                  />
+                </label>
+              </div>
+              <!-- subject -->
+              <div class="contact-subject">
+                <label for="contact-subject">
+                  <input
+                    type="text"
+                    id="contact-subject"
+                    placeholder="Enter the subject"
+                    required
+                  />
+                </label>
+              </div>
+              <!-- message -->
+              <div class="contact-message">
+                <label for="contact-message">
+                  <textarea
+                    rows="10"
+                    id="contact-message"
+                    placeholder="Enter your message"
+                    required
+                  ></textarea>
+                </label>
+              </div>
+              <!-- submit button -->
+              <div class="contact-submit">
+                <label for="contact-submit">
+                  <button
+                    type="submit"
+                    class="main-btn bk-btn"
+                    id="contact-submit"
+                  >
+                    SEND
+                  </button>
+                </label>
+                <p id="log"></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!------ footer ------>
+    <footer class="site-footer">
+      <div class="row">
+        <div class="footer-col">
+          <img
+            src="./images/default-monochrome-black.svg"
+            alt="footer-logo"
+            height="87"
+            width="100"
+          />
+        </div>
+        <div class="footer-col footer-col-about">
+          <h4>ABOUT</h4>
+          <p>
+            This is a final project for the module "Web Development and User
+            Experience". The object is to utilise HTML, CSS, and JavaScript to
+            develop a personal trainer website.
+          </p>
+          <div class="social-media">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-instagram-square"></i>
+            <i class="fab fa-linkedin"></i>
+          </div>
+          <p>Made with <i class="fas fa-heart"></i> by Chen-Shuang Wei</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./scripts/script_g.js"></script>
+    <script src="./scripts/script_contact.js"></script>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+  </body>
+</html>
