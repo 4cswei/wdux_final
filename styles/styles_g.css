@@ -73,15 +73,14 @@ nav img {
   text-align: center;
   margin-top: 2.5rem;
 }
-#intro {
-  color: white;
-}
 
 .intro h1 {
+  color: white;
   font-size: 3.5rem;
 }
 
 .intro p {
+  color: white;
   margin: 1rem;
   font-size: 1.3rem;
   padding: 1rem;
